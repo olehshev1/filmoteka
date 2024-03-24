@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+  font-family: $fonts;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  &.scroll-hidden {
+    overflow: hidden;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+/* Container */
+.container {
+  text-align: center;
+
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $min-mobile) {
+    max-width: 480px;
+  }
+  @media (min-width: $min-tablet) {
+    max-width: 1023px;
+  }
+  @media (min-width: $min-desktop) {
+    min-width: 1024px;
+    max-width: 1280px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+}

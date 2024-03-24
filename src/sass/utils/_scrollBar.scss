@@ -1,0 +1,14 @@
+::-webkit-scrollbar {
+  pointer-events: visible;
+  background: transparent;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, $orange-color, $red-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}

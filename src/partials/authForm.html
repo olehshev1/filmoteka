@@ -1,0 +1,84 @@
+<div class="auth-overlay visually-hidden">
+  <div class="auth-modal">
+    <button class="auth-modal__btn-close">
+      <svg class="modal__btn-close-icon" width="14" height="14">
+        <use href="./images/svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="reg-form">
+      <h2 class="form-title lng__regTitle">Registration</h2>
+      <form id="reg-form">
+        <div class="reg-form__login">
+          <label class="login-label label lng__regEmailLabel" for="login"
+            >Enter your email:</label
+          >
+          <input
+            class="login-input input"
+            type="email"
+            name="login"
+            id="login"
+          />
+        </div>
+        <div class="reg-form__password">
+          <label
+            class="password-label label lng__regPasswordLabel"
+            for="password"
+            >Enter your password:
+          </label>
+          <input
+            class="password input"
+            type="password"
+            name="password"
+            id="password"
+          />
+        </div>
+
+        <button class="sign-up neon lib__btn lng__signUp" type="submit">
+          sign up
+        </button>
+      </form>
+      <span class="separator lng__regSeparator">or</span>
+      <button class="already-reg neon lib__btn lng__alreadyReg">
+        I already have an account
+      </button>
+    </div>
+    <div class="auth-form">
+      <h2 class="form-title auth__form-title lng__authTitle">Authorization</h2>
+      <form id="auth-form">
+        <div class="auth-form__login">
+          <label
+            class="auth-login__label label lng__authEmailLabel"
+            for="auth-login"
+            >Enter your email:
+          </label>
+          <input
+            class="auth-login input"
+            type="email"
+            name="login"
+            id="auth-login"
+          />
+        </div>
+        <div class="auth-form__password">
+          <label
+            class="auth-password__label label lng__authPasswordLabel"
+            for="auth-password"
+            >Enter your password:
+          </label>
+          <input
+            class="auth-password input"
+            type="password"
+            name="password"
+            id="auth-password"
+          />
+        </div>
+        <button class="sign-in neon lib__btn lng__signIn" type="submit">
+          sign in
+        </button>
+      </form>
+      <span class="separator lng__authSeparator">or</span>
+      <button class="anyway-reg neon lib__btn lng__anywayReg">
+        Create a new account
+      </button>
+    </div>
+  </div>
+</div>
