@@ -1,0 +1,110 @@
+<div class="backdrop is-hidden">
+  <div class="video-treiler">
+    <iframe
+      class="iframe"
+      type="text/html"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer;
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="modal-box-authors" id="cardMoveAuthors"></div>
+
+  <div class="modal">
+    <div class="modal__close">
+      <button type="button" class="modal__btn-close">
+        <svg class="modal__btn-close-icon" width="14" height="14">
+          <use href="./images/svg/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal__card">
+      <img
+        class="modal__card-poster"
+        src="./images/img/mob/header-bg-lines-mob-1x.png"
+        alt="poster"
+      />
+      <button type="button" class="btn__trailer">
+        <svg class="modal__btn-youTube-icon" width="60" height="50">
+          <use href="./images/svg/sprite.svg#youTube-icon"></use>
+        </svg>
+      </button>
+      <div class="modal__card-box">
+        <h2 class="modal__card-title">Film title</h2>
+        <div class="modal__movieInfo">
+          <ul class="modal__card-list titleName__List">
+            <li class="modal__card-item">
+              <span class="modal__card-info modal__card-info-vote lng__vote"
+                >Vote/Votes</span
+              >
+            </li>
+            <li class="modal__card-item">
+              <span class="modal__card-info lng__popular">Popularity</span>
+
+            </li>
+            <li class="modal__card-item">
+              <span class="modal__card-info lng__title">Original Title</span>
+
+            </li>
+            <li class="modal__card-item">
+              <span class="modal__card-info lng__genre">Genre</span>
+
+            </li>
+            <li class="modal__authors">
+              <span class="modal__card-info lng__authors">Authors</span>
+
+            </li>
+          </ul>
+
+          <ul class="modal__card-list titleValue__List">
+            <li class="modal__card-item">
+
+              <span class="modal__card-vote">10.0</span>
+              <span>/</span>
+              <span class="modal__card-votes">1206</span>
+            </li>
+            <li class="modal__card-item">
+
+              <span class="modal__card-popularity">100.2 </span>
+            </li>
+            <li class="modal__card-item">
+
+              <span class="modal__card-original-title">Film Name</span>
+            </li>
+            <li class="modal__card-item">
+
+              <span class="modal__card-genre">Genre Name</span>
+            </li>
+            <li class="modal__authors">
+
+              <span
+                ><button class="lng__show" data-id="${id}" id="showAuthors">
+                  show
+                </button></span
+              >
+            </li>
+          </ul>
+        </div>
+        <h3 class="modal__card-discription-title lng__about">About</h3>
+        <p class="modal__card-discription">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Exercitationem, consequatur, delectus nam numquam quisquam omnis
+          fugiat id inventore explicabo, tempora illum cum doloremque?
+          Perferendis dignissimos placeat odio magnam, rem minima?
+        </p>
+        <div class="btn__modal-add">
+          <button class="btn__modal-watched lng__addWatched" type="button">
+            ADD TO WATCHED
+          </button>
+          <button class="btn__modal-queue lng__addQueue" type="button">
+            ADD TO QUEUE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

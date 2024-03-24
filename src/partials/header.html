@@ -1,0 +1,76 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__navigation">
+      <a class="header__logo" href="./index.html">
+        <svg class="logo__icon" width="24" height="24">
+          <use href="./images/svg/header-icon.svg#icon-film"></use>
+        </svg>
+        <span class="header__title">Filmoteka</span>
+      </a>
+      <div class="nav-wrapper">
+        <ul class="header__list">
+          <li class="header__nav">
+            <button type="button" class="header__btn home current lng__home">
+              Home
+            </button>
+          </li>
+          <li class="header__nav">
+            <button type="button" class="header__btn library lng__library">
+              My library
+            </button>
+          </li>
+          <li class="header__nav auth-btn__enter">
+            <button type="button" class="header__btn auth-btn lng__mainSignIn">
+              sign in
+            </button>
+          </li>
+          <li class="header__nav auth-btn__leave visually-hidden">
+            <button type="button" class="header__btn auth-btn lng__signOut">
+              sign out
+            </button>
+          </li>
+        </ul>
+        <span class="login"></span>
+      </div>
+    </div>
+    <div class="header__box">
+      <form class="header__form" action="#" id="header__form">
+        <input
+          class="header__input lng__mainInput"
+          type="text"
+          placeholder="Movie search"
+          name="searchQuery"
+          autocomplete="off"
+        />
+        <button class="form__btn" type="submit">
+          <svg class="form__icon" width="12" height="12">
+            <use href="./images/svg/header-icon.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="header__buttons visually-hidden">
+      <button class="lib__btn watchedBtn current__libBtn neon lng__watched">
+        watched
+      </button>
+      <button class="lib__btn queueBtn neon lng__queue">queue</button>
+      <br />
+      <button class="lib__btn clearBtn neon lng__clear">clear</button>
+    </div>
+    <div class="checkbox-group-wrapper">
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+      <div class="lang__switch--wrapper" id="lang-switcher">
+        <label class="lang__switch" for="lang-checkbox">
+          <input type="checkbox" id="lang-checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </div>
+  </div>
+</header>

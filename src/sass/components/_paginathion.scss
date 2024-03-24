@@ -1,0 +1,69 @@
+.pagination ul {
+  width: 100%;
+  max-width: max-content;
+  margin: 0 auto;
+  display: flex;
+  // flex-wrap: wrap;
+  background: #fff;
+  margin-bottom: 20px;
+
+  @media (max-width: $min-tablet) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.pagination ul li {
+  color: #000;
+  list-style: none;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.pagination ul li.numb {
+  list-style: none;
+  height: 40px;
+  width: 40px;
+  margin: 0 3px;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.pagination ul li.numb.first {
+  margin: 0px 3px 0 3px;
+}
+.pagination ul li.numb.first {
+  margin: 0px 3px 0 3px;
+}
+.pagination ul li.numb.last {
+  margin: 0px 3px 0 3px;
+}
+.pagination ul li.dots {
+  font-size: 16px;
+  line-height: 30px;
+  cursor: default;
+}
+.pagination ul li.btn {
+  width: 40px;
+  height: 40px;
+  line-height: 44px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  &:hover {
+    svg {
+      path {
+        stroke: white;
+      }
+    }
+  }
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+  color: #fff;
+  background: #ff6b08;
+}
